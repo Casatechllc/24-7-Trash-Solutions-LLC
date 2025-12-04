@@ -521,10 +521,10 @@ export default {
     }
 
     /* Turn off the static parallax effect on phones to prevent glitches */
-    .hero {
+    /* .hero {
         background-attachment: scroll !important;
     }
-    
+     */
     /* Ensure the Navbar doesn't get pushed out */
     .navbar-toggler {
         margin-right: 0;
