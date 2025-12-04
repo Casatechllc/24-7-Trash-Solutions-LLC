@@ -294,8 +294,7 @@ export default {
 /* Hero Section */
 .hero {
     background: linear-gradient(180deg,rgba(0, 0, 0, 0.71) 50%, rgba(113, 20, 28, 0.85) 100%), 
-    url("/images/hero-header.jpg"),
-    silver;
+    url("/images/hero-header.jpg");
     background-size: cover;
     background-position: center;
     background-attachment: fixed; /* <--- THIS LINE creates the static effect */

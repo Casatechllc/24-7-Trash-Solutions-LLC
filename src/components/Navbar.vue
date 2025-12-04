@@ -84,6 +84,7 @@ export default {
   padding-top: 0.8rem;
   padding-bottom: 0.8rem;
   transition: all 0.3s ease;
+  width: 100vw;
 }
 
 .navbar-brand {

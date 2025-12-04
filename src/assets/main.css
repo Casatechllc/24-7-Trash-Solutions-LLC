@@ -50,7 +50,7 @@ body {
   font-family: var(--font-family-body);
   color: var(--color-secondary);
   padding-top: var(--spacing-top); 
-  width: 100%;
+  /* width: 100%; */
   overflow-x: hidden !important;
   position: relative;
   /* Padding top handled by specific sections if using fixed nav */
