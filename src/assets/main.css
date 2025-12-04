@@ -34,7 +34,7 @@
   --spacing-md: 2rem;
   --spacing-lg: 4rem;
   --spacing-xl: 6rem;
-  --spacing-top: 76px; /* Height of your future Navbar */
+  --spacing-top: 72px; /* Height of your future Navbar */
 
   /* --- UI Elements --- */
   --border-radius: 8px;
@@ -49,6 +49,10 @@
 body {
   font-family: var(--font-family-body);
   color: var(--color-secondary);
+  padding-top: var(--spacing-top); 
+  width: 100%;
+  /* overflow: hidden !important; */
+  position: relative;
   /* Padding top handled by specific sections if using fixed nav */
 }
 

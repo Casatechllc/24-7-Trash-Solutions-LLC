@@ -519,5 +519,15 @@ export default {
     .hero h1 {
         font-size: 2rem;
     }
+
+    /* Turn off the static parallax effect on phones to prevent glitches */
+    .hero {
+        background-attachment: scroll !important;
+    }
+    
+    /* Ensure the Navbar doesn't get pushed out */
+    .navbar-toggler {
+        margin-right: 0;
+    }
 }
 </style>
