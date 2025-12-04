@@ -144,7 +144,7 @@ export default {
 }
 
 /* Extra Small Screens (Android Phones) */
-@media (max-width: 400px) {
+@media (max-width: 576px) {
   /* Shrink the text slightly so "24/7 Trash Solutions LLC" fits next to the button */
   .navbar-brand {
     font-size: 1rem; 
