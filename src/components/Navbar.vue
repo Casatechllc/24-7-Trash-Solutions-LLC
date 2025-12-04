@@ -1,5 +1,5 @@
 <script>
-import { Collapse } from 'bootstrap'; // Import Bootstrap Collapse for mobile menu handling
+// import { Collapse } from 'bootstrap'; // Import Bootstrap Collapse for mobile menu handling
 
 export default {
   name: 'Navbar',
@@ -42,12 +42,12 @@ export default {
 <template>
   <nav class="navbar navbar-expand-lg navbar-dark fixed-top custom-navbar" :class="{ 'scrolled': isScrolled }">
     <div class="container">
-      <a class="navbar-brand fw-bold" href="#home" @click="closeMenu">
+      <a class="navbar-brand fw-bold mb-3" href="#home" @click="closeMenu">
         <!-- <i class="fas fa-trash-alt me-2"></i> -->
         24/7 Trash Solutions LLC
       </a>
 
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <button class="navbar-toggler mb-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
 
@@ -84,7 +84,7 @@ export default {
   padding-top: 0.8rem;
   padding-bottom: 0.8rem;
   transition: all 0.3s ease;
-  position: fixed;
+  height: var(--spacing-top);
   width: 100vw;         /* Ensures it spans the full width without overflowing */
   top: 0;              /* Forces it to the very top */
   z-index: 9999;       /* Forces it above the Video Background (which is z-index 1) */
@@ -136,9 +136,7 @@ export default {
     padding: 1rem;
     border-radius: 0 0 10px 10px;
     border-top: 1px solid rgba(255,255,255,0.1);
-
-    max-height: 80vh; 
-    overflow-y: auto;
+    width: 100vh;
   }
   
   .nav-item {
