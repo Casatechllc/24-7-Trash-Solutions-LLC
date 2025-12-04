@@ -92,6 +92,11 @@ export default {
   font-size: 1.5rem;
   color: var(--light-text) !important;
   letter-spacing: 0.5px;
+
+  max-width: 75%; 
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .nav-link {
@@ -142,7 +147,7 @@ export default {
 @media (max-width: 400px) {
   /* Shrink the text slightly so "24/7 Trash Solutions LLC" fits next to the button */
   .navbar-brand {
-    font-size: 1.1rem; 
+    font-size: 1rem; 
   }
 }
 </style>
