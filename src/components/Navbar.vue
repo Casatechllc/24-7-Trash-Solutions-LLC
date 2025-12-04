@@ -138,7 +138,7 @@ export default {
     border-top: 1px solid rgba(255,255,255,0.1);
 
     max-height: 80vh; 
-    overflow: hidden;
+    overflow-y: auto;
   }
   
   .nav-item {
