@@ -297,7 +297,7 @@ export default {
     url("/images/hero-header.jpg");
     background-size: cover;
     background-position: center;
-    /* background-attachment: fixed; <--- THIS LINE creates the static effect */
+    background-attachment: fixed;
     height: 100vh;
     display: flex;
     align-items: center;
