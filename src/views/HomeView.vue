@@ -404,7 +404,7 @@ export default {
     right: 0;
     width: 150px;
     height: 150px;
-    /* overflow: hidden; */
+    overflow: hidden;
     pointer-events: none; /* Allows clicking through the ribbon area */
 }
 
@@ -438,6 +438,8 @@ export default {
     width: 100%;
     height: 100%;
     z-index: 1;
+    aspect-ratio: 16 / 9; /* Reserves the space immediately */
+  background-color: #000; /* Optional: prevents white flash */
 }
 
 .video-background video {
