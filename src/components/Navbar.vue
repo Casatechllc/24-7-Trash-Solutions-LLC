@@ -84,7 +84,7 @@ export default {
   padding-top: 0.8rem;
   padding-bottom: 0.8rem;
   transition: all 0.3s ease;
-  width: 100vw;
+  /* width: 100vw; */
 }
 
 .navbar-brand {
@@ -128,10 +128,21 @@ export default {
     padding: 1rem;
     border-radius: 0 0 10px 10px;
     border-top: 1px solid rgba(255,255,255,0.1);
+
+    max-height: 80vh; 
+    overflow-y: auto;
   }
   
   .nav-item {
     margin-bottom: 10px;
+  }
+}
+
+/* Extra Small Screens (Android Phones) */
+@media (max-width: 400px) {
+  /* Shrink the text slightly so "24/7 Trash Solutions LLC" fits next to the button */
+  .navbar-brand {
+    font-size: 1.1rem; 
   }
 }
 </style>
