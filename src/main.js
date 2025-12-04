@@ -9,7 +9,7 @@ import './assets/main.css'
 import 'aos/dist/aos.css';
 
 // --- Import ALL JS files *before* mounting ---
-import "bootstrap/dist/js/bootstrap.bundle.min.js" // Bootstrap JS
+// import "bootstrap/dist/js/bootstrap.bundle.min.js" // Bootstrap JS
 
 import AOS from 'aos';
 

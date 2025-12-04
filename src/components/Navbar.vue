@@ -85,7 +85,7 @@ export default {
   padding-bottom: 0.8rem;
   transition: all 0.3s ease;
 
-  width: 100%;         /* Ensures it spans the full width without overflowing */
+  width: 100vw;         /* Ensures it spans the full width without overflowing */
   top: 0;              /* Forces it to the very top */
   z-index: 9999;       /* Forces it above the Video Background (which is z-index 1) */
 }
