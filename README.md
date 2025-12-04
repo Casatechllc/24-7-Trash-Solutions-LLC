@@ -2,6 +2,22 @@
 
 This template should help get you started developing with Vue 3 in Vite.
 
+```sh
+git init
+git config --global user.email "<email>"
+git remote add origin https://github.com/Casatechllc/24-7-Trash-Solutions-LLC.git
+git pull origin main
+git checkout main
+
+npm create vue@latest
+npm install vue-router
+npm install bootstrap
+npm install swiper
+npm install aos
+npm install
+npm run dev
+```
+
 ## Recommended IDE Setup
 
 [VS Code](https://code.visualstudio.com/) + [Vue (Official)](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).

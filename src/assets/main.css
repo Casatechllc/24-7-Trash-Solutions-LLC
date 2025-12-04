@@ -1,0 +1,85 @@
+/* src/assets/main.css */
+
+:root {
+  /* --- Colors --- */
+  --color-primary: #71141c;      /* Your Brand Red */
+  --color-prinary-rbg: 133, 20, 28;
+  --color-secondary: #000000;    /* Black */
+  --color-secondary-rbg: 0, 0, 0;
+  --color-accent: #d4af37;       /* Gold/Elegant Accent */
+  
+  --primary-shadow: rgba(113, 20, 28, 0.2);
+  --secondary-dark-grey: #212529;
+  
+  --light-text: #ffffff;
+  --dark-background: #121212;
+  --color-background: #ffffff;
+  --color-text-light: #6c757d;
+  --bg-primary: #f8f9fa;         /* Light grey background for sections */
+
+  /* --- Typography --- */
+  --font-family-body: 'Open Sans', sans-serif;
+  --font-family-headings: 'Montserrat', sans-serif;
+  --font-size-base: 1rem;
+  --font-size-lg: 1.25rem;
+  --font-size-xl: 2.5rem;
+  --font-weight-light: 300;
+  --font-weight-normal: 400;
+  --font-weight-bold: 700;
+  --line-height-base: 1.6;
+
+  /* --- Spacing --- */
+  --spacing-xs: 0.5rem;
+  --spacing-sm: 1rem;
+  --spacing-md: 2rem;
+  --spacing-lg: 4rem;
+  --spacing-xl: 6rem;
+  --spacing-top: 76px; /* Height of your future Navbar */
+
+  /* --- UI Elements --- */
+  --border-radius: 8px;
+  --box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+
+  /* --- Transitions --- */
+  --transition-default: all 0.3s ease-in-out;
+  --transition-color: color 0.3s ease;
+}
+
+/* Base Global Styles */
+body {
+  font-family: var(--font-family-body);
+  color: var(--color-secondary);
+  /* Padding top handled by specific sections if using fixed nav */
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-family-headings);
+  font-weight: var(--font-weight-bold);
+  color: var(--color-primary);
+}
+
+/* Custom Button Styles to match your brand */
+.btn-custom {
+  background-color: var(--color-primary);
+  color: var(--light-text);
+  border: 2px solid var(--color-primary);
+  transition: var(--transition-default);
+}
+
+.btn-custom:hover {
+  background-color: transparent;
+  color: var(--color-primary);
+  border-color: var(--color-primary);
+}
+
+.btn-outline-custom {
+  background-color: transparent;
+  color: var(--color-primary);
+  border: 2px solid var(--color-primary);
+  transition: var(--transition-default);
+}
+
+.btn-outline-custom:hover {
+  background-color: var(--color-primary);
+  color: var(--light-text);
+}
