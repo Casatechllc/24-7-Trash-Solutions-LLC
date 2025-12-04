@@ -241,7 +241,7 @@ export default {
     </section>
 
     <!-- Service Areas -->
-    <section class="section-padding position-relative overflow-hidden">
+    <!-- <section class="section-padding position-relative overflow-hidden">
         
         <div class="video-background">
             <video ref="mapVideo" autoplay muted loop playsinline>
@@ -261,7 +261,7 @@ export default {
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
 
     <!-- FAQ Section -->
     <section class="section-padding">
