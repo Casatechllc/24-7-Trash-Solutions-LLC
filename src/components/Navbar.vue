@@ -1,5 +1,5 @@
 <script>
-// import { Collapse } from 'bootstrap'; // Import Bootstrap Collapse for mobile menu handling
+import { Collapse } from 'bootstrap'; // Import Bootstrap Collapse for mobile menu handling
 
 export default {
   name: 'Navbar',
