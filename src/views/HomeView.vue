@@ -404,7 +404,7 @@ export default {
     right: 0;
     width: 150px;
     height: 150px;
-    overflow: hidden;
+    /* overflow: hidden; */
     pointer-events: none; /* Allows clicking through the ribbon area */
 }
 
