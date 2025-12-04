@@ -298,7 +298,7 @@ export default {
     background-size: cover;
     background-position: center;
     background-attachment: fixed; /* <--- THIS LINE creates the static effect */
-    height: calc(100vh - var(--spacing-top));
+    height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
