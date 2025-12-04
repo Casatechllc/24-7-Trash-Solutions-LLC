@@ -51,7 +51,7 @@ body {
   color: var(--color-secondary);
   margin-top: var(--spacing-top); 
   width: 100%;
-  overflow-x: hidden !important;
+  overflow: hidden !important;
   position: relative;
   /* Padding top handled by specific sections if using fixed nav */
 }
