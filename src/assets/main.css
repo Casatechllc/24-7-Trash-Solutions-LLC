@@ -46,13 +46,12 @@
 }
 
 /* Base Global Styles */
-body {
+html, body {
   font-family: var(--font-family-body);
   color: var(--color-secondary);
-  margin-top: var(--spacing-top); 
   width: 100%;
   overflow-x: hidden !important;
-  /* position: relative; */
+  position: relative;
   /* Padding top handled by specific sections if using fixed nav */
 }
 

@@ -4,9 +4,8 @@ import router from './router'
 
 // --- Import ALL CSS files first ---
 // import 'swiper/css/bundle'
-// import 'aos/dist/aos.css';
-import "bootstrap/dist/css/bootstrap.min.css" // Bootstrap CSS
-import './assets/main.css'
+import 'aos/dist/aos.css';
+
 
 
 // --- Import ALL JS files *before* mounting ---
@@ -27,3 +26,5 @@ AOS.init({
   offset: 50     // Triggers animation 50px before the element's top reaches the viewport
 });
 
+import "bootstrap/dist/css/bootstrap.min.css" // Bootstrap CSS
+import './assets/main.css'

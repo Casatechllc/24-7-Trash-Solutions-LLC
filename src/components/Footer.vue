@@ -8,7 +8,8 @@ export default {
       phone2: '(540) 560-4528',
       email: '247trashsolutions@gmail.com',
       facebookUrl: 'https://www.facebook.com/profile.php?id=61577914419017',
-      casatechUrl: 'https://casatechllc.com'
+      casatechUrl: 'https://casatechllc.com',
+      googleUrl: 'https://share.google/UP1IDOxfrwAmtFTn3'
     }
   },
   computed: {
@@ -32,7 +33,7 @@ export default {
             <a :href="facebookUrl" target="_blank" class="social-icon">
               <i class="fab fa-facebook-f"></i>
             </a>
-            <a href="#" class="social-icon ms-2">
+            <a :href="googleUrl" target="_blank" class="social-icon ms-2">
               <i class="fas fa-share-alt"></i>
             </a>
           </div>
