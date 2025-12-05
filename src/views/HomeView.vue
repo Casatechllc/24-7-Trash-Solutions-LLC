@@ -61,7 +61,7 @@ export default {
   <main>
     <!-- Hero Section -->
     <section id="home" class="hero">
-        <div class="container" data-aos="fade-up">
+        <div class="container" >
             <h1 class="display-4 fw-bold">Efficient. Reliable. <span class="hero-highlight">24/7.</span></h1>
             <p class="lead mb-4">Prompt waste management services tailored for residential, commercial, and industrial spaces.</p>
             <div class="d-flex gap-3 justify-content-center flex-wrap">
@@ -76,10 +76,10 @@ export default {
     <section id="about" class="section-padding">
         <div class="container">
             <div class="row align-items-center">
-                <div class="col-lg-6" data-aos="fade-right">
+                <div class="col-lg-6" >
                     <img src="/images/about-us.jpg" alt="Clean Environment" class="about-img mb-4 mb-lg-0">
                 </div>
-                <div class="col-lg-6" data-aos="fade-left">
+                <div class="col-lg-6" >
                     <h2 class="mb-4">About Us</h2>
                     <p class="lead">We take care of all your trashy problems with prompt, efficient, and reliable waste management services.</p>
                     <p>
@@ -112,14 +112,14 @@ export default {
         </div>
 
         <div class="container position-relative" style="z-index: 2;">
-            <div class="text-center mb-5" data-aos="fade-up">
+            <div class="text-center mb-5" >
                 <h2>Our Services</h2>
                 <div style="width: 60px; height: 4px; background: var(--color-primary); margin: 10px auto;"></div>
                 <p>Comprehensive solutions for all your disposal and organization needs</p>
             </div>
 
             <div class="row g-4">
-                <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="100">
+                <div class="col-md-6 col-lg-3" >
                     <div class="service-card text-center">
                         <div class="service-icon"><i class="fas fa-trash"></i></div>
                         <h3 class="h4">Trash Removal</h3>
@@ -127,7 +127,7 @@ export default {
                     </div>
                 </div>
 
-                <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="200">
+                <div class="col-md-6 col-lg-3" >
                     <div class="service-card text-center">
                         <div class="service-icon"><i class="fas fa-truck-loading"></i></div>
                         <h3 class="h4">Dumpster Rental</h3>
@@ -135,7 +135,7 @@ export default {
                     </div>
                 </div>
 
-                <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="300">
+                <div class="col-md-6 col-lg-3" >
                     <div class="service-card text-center">
                         <div class="service-icon"><i class="fas fa-recycle"></i></div>
                         <h3 class="h4">Debris Collection</h3>
@@ -143,7 +143,7 @@ export default {
                     </div>
                 </div>
 
-                <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="400">
+                <div class="col-md-6 col-lg-3" >
                     <div class="service-card text-center">
                         <div class="service-icon"><i class="fas fa-boxes"></i></div>
                         <h3 class="h4">Organize & Declutter</h3>
@@ -157,11 +157,11 @@ export default {
     <!-- Details/Pricing Section -->
     <section id="pricing" class="section-padding">
         <div class="container">
-            <h2 class="text-center mb-5 fw-bold" data-aos="fade-up">Pricing / Precios</h2>
+            <h2 class="text-center mb-5 fw-bold" >Pricing / Precios</h2>
             
             <div class="row g-4">
                 
-                <div class="col-lg-6" data-aos="fade-right">
+                <div class="col-lg-6" >
                     <div class="dumpster-card h-100 d-flex flex-column">
                         <div class="card-body p-4 p-md-5">
                             <h3 class="fw-bold mb-1">Dumpster Rental</h3>
@@ -196,7 +196,7 @@ export default {
                     </div>
                 </div>
 
-                <div class="col-lg-6" data-aos="fade-left">
+                <div class="col-lg-6" >
                     <div class="dumpster-card h-100 d-flex flex-column position-relative overflow-hidden">
                         
                         <div class="ribbon-wrapper">
@@ -252,10 +252,10 @@ export default {
         </div>
 
         <div class="container text-center position-relative" style="z-index: 2;">
-            <h2 class="mb-4 fw-bold" data-aos="fade-up">Service Areas</h2>
-            <p class="mb-5 lead" data-aos="fade-up"><strong>Proudly serving the following locations in Virginia:</strong></p>
+            <h2 class="mb-4 fw-bold" >Service Areas</h2>
+            <p class="mb-5 lead" ><strong>Proudly serving the following locations in Virginia:</strong></p>
             
-            <div class="d-flex flex-wrap justify-content-center" data-aos="fade-up">
+            <div class="d-flex flex-wrap justify-content-center" >
                 <div v-for="location in locations" :key="location" class="location-badge shadow-sm">
                     <i class="fas fa-map-marker-alt me-2 text-danger"></i> {{ location }}
                 </div>
@@ -266,10 +266,10 @@ export default {
     <!-- FAQ Section -->
     <section class="section-padding">
         <div class="container">
-            <h2 class="text-center mb-5" data-aos="fade-up">Frequently Asked Questions</h2>
+            <h2 class="text-center mb-5" >Frequently Asked Questions</h2>
             <div class="row justify-content-center">
                 <div class="col-lg-8">
-                    <div class="accordion" id="faqAccordion" data-aos="fade-up">
+                    <div class="accordion" id="faqAccordion" >
                         <div class="accordion-item" v-for="(item, index) in faq" :key="index">
                             <h2 class="accordion-header" :id="'heading'+index">
                                 <button class="accordion-button" :class="{ collapsed: index !== 0 }" type="button" data-bs-toggle="collapse" :data-bs-target="'#collapse'+index">

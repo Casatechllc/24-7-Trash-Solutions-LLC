@@ -4,9 +4,10 @@ import router from './router'
 
 // --- Import ALL CSS files first ---
 // import 'swiper/css/bundle'
+// import 'aos/dist/aos.css';
 import "bootstrap/dist/css/bootstrap.min.css" // Bootstrap CSS
 import './assets/main.css'
-import 'aos/dist/aos.css';
+
 
 // --- Import ALL JS files *before* mounting ---
 // import "bootstrap/dist/js/bootstrap.bundle.min.js" // Bootstrap JS
