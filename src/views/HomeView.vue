@@ -1,62 +1,3 @@
-<script>
-import AOS from 'aos';
-import 'aos/dist/aos.css';
-
-export default {
-  name: 'HomeView',
-  data() {
-    return {
-      phone1: '(540) 849-5594',
-      phone2: '(540) 560-4528',
-      email: '247trashsolutions@gmail.com',
-      locations: [
-        'Harrisonburg, VA',
-        'Staunton, VA',
-        'Waynesboro, VA',
-        'Stuarts Draft, VA',
-        'Charlottesville, VA',
-        'Rockingham County',
-        'Augusta County'
-      ],
-      faq: [
-        {
-          question: "What types of payments do you accept?",
-          answer: "We accept most major credit cards, cash, and checks. Please contact us for specific payment arrangement details."
-        },
-        {
-          question: "Do you offer services on weekends?",
-          answer: "Yes! As our name suggests, we are 24/7 Trash Solutions. We offer services Monday through Sunday, around the clock."
-        },
-        {
-          question: "How do I book a dumpster?",
-          answer: "Booking is simple. You can call or text us at (540) 849-5594, or email us. We'll discuss your needs and schedule a drop-off time."
-        },
-        {
-          question: "What can I put in the 13 Yard Dumpster?",
-          answer: "You can dispose of general household trash, construction debris, yard waste, and furniture. Hazardous materials, tires, and batteries are typically prohibited—please ask if you are unsure."
-        }
-      ]
-    }
-  },
-  computed: {
-    phone1Clean() {
-      return this.phone1.replace(/\D/g, '');
-    },
-    // Used if you add a second call button
-    phone2Clean() {
-      return this.phone2.replace(/\D/g, '');
-    }
-  },
-  mounted() {
-    AOS.init({
-      duration: 800,
-      once: true,
-      offset: 100
-    });
-  }
-}
-</script>
-
 <template>
   <main>
     <!-- Hero Section -->
@@ -102,6 +43,12 @@ export default {
                 </div>
             </div>
         </div>
+    </section>
+
+    <section>
+        <div class="section-carousel">
+            <ImageCarousel data-aos="fade-up"/>
+        </div> 
     </section>
 
     <!-- Services Section -->
@@ -153,6 +100,8 @@ export default {
             </div>
         </div>
     </section>
+
+    <PatternSpacer />
 
     <!-- Details/Pricing Section -->
     <section id="pricing" class="section-padding">
@@ -263,6 +212,10 @@ export default {
         </div>
     </section>
 
+    <section>
+        <GoogleReviewCTA />
+    </section>
+
     <!-- FAQ Section -->
     <section class="section-padding">
         <div class="container">
@@ -289,6 +242,73 @@ export default {
     </section>
   </main>
 </template>
+
+<script>
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import ImageCarousel from '@/components/ImageCarousel.vue';
+import PatternSpacer from '@/components/PatternSpacer.vue';
+import GoogleReviewCTA from '@/components/GoogleReviewCTA.vue';
+
+export default {
+  name: 'HomeView',
+  components: {
+    ImageCarousel,
+    PatternSpacer,
+    GoogleReviewCTA
+  },
+  data() {
+    return {
+      phone1: '(540) 849-5594',
+      phone2: '(540) 560-4528',
+      email: '247trashsolutions@gmail.com',
+      locations: [
+        'Harrisonburg, VA',
+        'Staunton, VA',
+        'Waynesboro, VA',
+        'Stuarts Draft, VA',
+        'Charlottesville, VA',
+        'Rockingham County',
+        'Augusta County'
+      ],
+      faq: [
+        {
+          question: "What types of payments do you accept?",
+          answer: "We accept most major credit cards, cash, and checks. Please contact us for specific payment arrangement details."
+        },
+        {
+          question: "Do you offer services on weekends?",
+          answer: "Yes! As our name suggests, we are 24/7 Trash Solutions. We offer services Monday through Sunday, around the clock."
+        },
+        {
+          question: "How do I book a dumpster?",
+          answer: "Booking is simple. You can call or text us at (540) 849-5594, or email us. We'll discuss your needs and schedule a drop-off time."
+        },
+        {
+          question: "What can I put in the 13 Yard Dumpster?",
+          answer: "You can dispose of general household trash, construction debris, yard waste, and furniture. Hazardous materials, tires, and batteries are typically prohibited—please ask if you are unsure."
+        }
+      ]
+    }
+  },
+  computed: {
+    phone1Clean() {
+      return this.phone1.replace(/\D/g, '');
+    },
+    // Used if you add a second call button
+    phone2Clean() {
+      return this.phone2.replace(/\D/g, '');
+    }
+  },
+  mounted() {
+    AOS.init({
+      duration: 800,
+      once: true,
+      offset: 100
+    });
+  }
+}
+</script>
 
 <style scoped>
 /* Hero Section */
@@ -338,6 +358,18 @@ export default {
     width: 100%;
     height: 400px;
     object-fit: cover;
+}
+
+/* carousel-section */
+.section-carousel {
+    background-color: var(--color-primary);
+}
+
+.section-carousel h2 {
+    color: var(--light-text);
+}
+.section-carousel p {
+    color: var(--light-text);
 }
 
 /* Services Cards */
