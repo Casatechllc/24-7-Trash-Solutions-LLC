@@ -45,11 +45,13 @@
         </div>
     </section>
 
+    <ClientOnly>
     <section>
         <div class="section-carousel">
             <ImageCarousel data-aos="fade-up"/>
         </div> 
     </section>
+    </ClientOnly>
 
     <!-- Services Section -->
     <section id="services" class="section-padding position-relative overflow-hidden">
