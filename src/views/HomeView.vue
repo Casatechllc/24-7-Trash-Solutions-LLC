@@ -7,7 +7,7 @@
             <p class="lead mb-4">Prompt waste management services tailored for residential, commercial, and industrial spaces.</p>
             <div class="d-flex gap-3 justify-content-center flex-wrap">
                 <a :href="'tel:' + phone1Clean" class="btn btn-custom btn-lg"><i class="fas fa-phone-alt me-2"></i> Call Now</a>
-                <a href="#contact" class="btn btn-outline-custom btn-lg text-white" style="border-color: #f8f9fa;">Book Service</a>
+                <a :href="'mailto:' + email" class="btn btn-outline-custom btn-lg text-white" style="border-color: #f8f9fa;">Book Service</a>
             </div>
             <p class="mt-4 fst-italic"><i class="fas fa-language"></i> Se habla español tambien</p>
         </div>
@@ -118,10 +118,11 @@
                             <h3 class="fw-bold mb-1">Dumpster Rental</h3>
                             <p class="text-warning mb-4 fw-bold">13-Yard Container</p>
                             
-                            <div class="d-flex align-items-baseline mb-4">
-                                <span class="display-3 fw-bold me-2">$350</span>
-                                <span class="h5 fw-normal text-white-50">Flat Rate</span>
+                            <div class="d-flex align-items-baseline mb-1">
+                                <span class="display-3 fw-bold me-2">$285</span>
+                                <span class="h5 fw-normal text-white-50">Flat Rate*</span>
                             </div>
+                            <p class="text-white-50 mb-4" style="font-size: 0.9rem;"><em>* $350 if more than 30 miles away</em></p>
 
                             <ul class="list-unstyled lead mb-4 flex-grow-1">
                                 <li class="mb-2"><i class="fas fa-check-circle text-warning me-2"></i> Drop-off & Pickup Included</li>
@@ -158,10 +159,11 @@
                             <h3 class="fw-bold mb-1">Renta de Contenedor</h3>
                             <p class="text-warning mb-4 fw-bold">Tamaño de 13 Yardas</p>
                             
-                            <div class="d-flex align-items-baseline mb-4">
-                                <span class="display-3 fw-bold me-2">$350</span>
-                                <span class="h5 fw-normal text-white-50">Precio Fijo</span>
+                            <div class="d-flex align-items-baseline mb-1">
+                                <span class="display-3 fw-bold me-2">$285</span>
+                                <span class="h5 fw-normal text-white-50">Precio Fijo*</span>
                             </div>
+                            <p class="text-white-50 mb-4" style="font-size: 0.9rem;"><em>* $350 si está a más de 30 millas</em></p>
 
                             <ul class="list-unstyled lead mb-4 flex-grow-1">
                                 <li class="mb-2"><i class="fas fa-check-circle text-warning me-2"></i> Entrega y Recogida Incluida</li>
